@@ -1,13 +1,13 @@
+//Loop For
 void soal5() {
-  // var panjang = 6;
-  // var hasil = '';
-  // var i = 1, j = 1;
 
-  // for (i; i <= 8; i++) {
-  //   for (j; j <= i.bitLength; j++) {
-  //     print('#');
-  //   }
-  //   // print("%");
-  // }
-  // print('\n');
+  for (int i = 1; i < 21; i++) {
+    if (i % 3 == 0 && i % 2 == 1) {
+      print('$i - I Love Coding');
+    } else if (i % 2 == 0) {
+      print('$i - Berkualitas');
+    } else if (i % 2 == 1) {
+      print('$i - Santai');
+    }
+  }
 }
