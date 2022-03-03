@@ -1,111 +1,55 @@
-//Switch Case
+import 'dart:io';
+
 void soal3() {
-  var tanggal = 21;
-  var bulan = 1;
-  var tahun = 1945;
+  print('isi harimu ya agar kamu menjadi seorang penyair : ');
+  print(
+      "1. Senin  \n2. Selasa \n3. Rabu \n4. Kamis \n5. Jumat \n6. Sabtu \n7. Minggu \nPilihlah hari dengan ketikkan angka!");
+  var hari = stdin.readLineSync();
 
-  //tgl
-  switch (tanggal) {
-    case 19:
+  switch (hari) {
+    case "1":
       {
-        print('tanggal : 19');
+        print(
+            'Segala sesuatu memiliki kesudahan, yang sudah berakhir biarlah berlalu dan yakinlah semua akan baik-baik saja');
+        break;
       }
-      break;
-
-    case 20:
+    case "2":
       {
-        print('tanggal : 20');
+        print(
+            'Setiap detik sangatlah berharga karena waktu mengetahui banyak hal, termasuk rahasia hati.');
+        break;
       }
-      break;
-
-    case 21:
+    case "3":
       {
-        print('tanggal : $tanggal');
+        print(
+            'Jika kamu tak menemukan buku yang kamu cari di rak, maka tulislah sendiri.');
+        break;
       }
-      break;
-
-    case 22:
+    case "4":
       {
-        print('tanggal : 22');
+        print(
+            'Jika hatimu banyak merasakan sakit, maka belajarlah dari rasa sakit itu untuk tidak memberikan rasa sakit pada orang lain.');
+        break;
       }
-      break;
-
+    case "5":
+      {
+        print('Hidup tak selamanya tentang pacar.');
+        break;
+      }
+    case "6":
+      {
+        print('Rumah bukan hanya sebuah tempat, tetapi itu adalah perasaan.');
+        break;
+      }
+    case "7":
+      {
+        print(
+            'Hanya seseorang yang takut yang bisa bertindak berani. Tanpa rasa takut itu tidak ada apapun yang bisa disebut berani.');
+        break;
+      }
     default:
       {
-        print('tanggal tidak ada');
+        print('Data tidak valid');
       }
-      break;
-  }
-
-  //bulan
-  switch (bulan) {
-    case 1:
-      {
-        print('bulan : Januari');
-      }
-      break;
-
-    case 2:
-      {
-        print('bulan : Februari');
-      }
-      break;
-
-    case 3:
-      {
-        print('bulan : Maret');
-      }
-      break;
-
-    case 4:
-      {
-        print('bulan : April');
-      }
-      break;
-
-    default:
-      {
-        print('bulan tidak ada');
-      }
-      break;
-  }
-
-  //tahun
-  switch (tahun) {
-    case 1941:
-      {
-        print('tahun : 1941');
-      }
-      break;
-
-    case 1942:
-      {
-        print('tahun : 1942');
-      }
-      break;
-
-    case 1943:
-      {
-        print('tahun : 1943');
-      }
-      break;
-
-    case 1944:
-      {
-        print('tahun : 1944');
-      }
-      break;
-
-    case 1945:
-      {
-        print('tahun : $tahun');
-      }
-      break;
-
-    default:
-      {
-        print('bulan tidak ada');
-      }
-      break;
   }
 }
